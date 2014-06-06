@@ -2,6 +2,21 @@ doctype html
 html
     head
         title= title
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
+        .container
+            .masthead
+                h3(class='text-muted') iSolution Portal
+                ul(class='nav nav-justified')
+                    li 
+                        a(href='#') Home
+                    li 
+                        a(href='#') Tools
+                    li 
+                        a(href='#') Contact
+                    li 
+                        a(href='#') About
         block content
+    script(src='/scripts/jquery-1.11.1.min.js')
+    script(src='/scripts/bootstrap.min.js')
